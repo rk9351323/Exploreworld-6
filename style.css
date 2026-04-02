@@ -60,7 +60,7 @@ font-weight: bold;
 
 }
 .hero{
-    background-image: url('/assets/banner.png'); 
+    background-image: url('./assets/banner.png'); 
     background-repeat: no-repeat;
     background-position: right 0px center;
     background-size: cover;
