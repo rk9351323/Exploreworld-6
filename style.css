@@ -1,0 +1,267 @@
+*{box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Scroll snap (main magic ) */
+body {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  padding-top: 50px;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+}
+
+/* Header (floating) */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.btn{
+    color: white;
+    border-radius: 5px;
+    width: 100px;
+    height: 50px;
+    text-decoration: none;
+}
+
+ .btn.btn--primary{
+background-color:rgb(228, 97, 97) ;
+
+}
+
+.btn.btn--secondary{
+    background-color: rgba(60, 60, 250, 0.884); 
+}
+
+.navbar{
+   display: flex;
+   justify-content: space-between;
+   background-color: #1e88e5;
+   color: white;
+   padding: 1rem 2rem;
+}
+.logo{
+color:black;
+font-weight: bold;
+}
+.navbar a{
+    font-weight: bold;
+    text-decoration: none;
+    color: aliceblue;
+    padding: 1rem;
+
+}
+.hero{
+    background-image: url('/assets/banner.png'); 
+    background-repeat: no-repeat;
+    background-position: right 0px center;
+    background-size: cover;
+    text-align: center;
+    padding: 5rem 1rem;
+    color: rgb(241, 31, 31);
+    
+}
+.hero image{
+    width: 100%;
+    object-fit: contain;
+    
+}
+.hero p{
+    padding: 1rem;
+    margin-bottom: 1rem;
+    color:rgb(248, 250, 253) ;
+    font-weight: 600;
+}
+.hero a{
+    padding: 1rem;
+    font-weight: 600;
+
+}
+
+.grid-preview{
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.card-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    margin: 2rem;
+}
+.card{
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    text-align: center;
+    padding: 0.5rem;
+}
+.card img{
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+}
+.card h3 {
+    padding: 0.5rem;
+    text-align: center;
+}
+.testimonials{
+    background-color: rgb(147, 186, 245);
+    padding: 2rem;
+    text-align: center;
+}
+.testimonial{
+    margin: 1rem;
+}
+
+.pricing-table{
+    text-align: center;
+    background-color: rgb(147, 186, 245);
+}
+
+table{
+    margin-top: 1rem;
+    width: 100%;
+    border-collapse: collapse;
+}
+.main-contact{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+}
+
+.contact-form{
+    margin: 4rem 1rem 1rem 1rem;
+    color: white;
+    background: aliceblue;
+    padding: 2rem;
+    border-radius: 50px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    
+}
+.contact-form h2{
+    text-align: center;
+    color: #1e88e5;
+    margin-bottom: 1rem;
+}
+.contact-form label{
+    color: #1e88e5;
+    display: block;
+    margin: 0.5rem;
+
+}
+
+.contact-form input, .contact-form textarea{
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 2px solid #3a3dc7;
+    border-radius: 5px;
+}
+
+.months{
+    display: flex;
+}
+.checkbox{
+  
+    margin: 1rem;
+    position: relative;
+}
+.checkbox input{
+    width: 60px;
+    height: 15px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.faq{
+    background-color: rgb(147, 186, 245);
+    padding-top: 0.5rem;
+}
+
+.section__title{
+    text-align: center;
+}
+
+summary{
+    font-weight: bold;
+    margin: 1rem;
+}
+
+.faq__content p{
+    color: azure;
+    padding: 1rem;
+  
+}
+
+.footer p{
+    background-color: #1e88e5;
+    color: white;
+    text-align: center;
+}
+@media (max-width: 726px) {
+    .navbar{
+        flex-direction: column;
+        align-items: center;
+      
+    }
+    .logo{
+        margin-bottom: 1rem;
+    }
+    .months{
+        flex-direction: column;
+        width:200px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(50px, 3fr));
+        word-wrap: break-word;
+    }
+  
+    
+}
+
+@media (max-width: 375px) {
+    .pricing-table{
+    width: 120%;
+    border-collapse: none;
+    }
+    .checkbox{
+        word-wrap: break-word;
+       position: relative;
+    }
+    label.checkbox{
+        display: flex;
+        align-items: center;
+    }
+    .hero p{
+        color: #b1b4bdc5;
+    }
+    .hero{
+        margin-top: 1rem;
+        color: rgba(252, 38, 38, 0.89);
+        background-position: right -44px center;
+    }
+    .grid-preview{
+        margin-top: 3rem;
+    }
+    .navbar a{
+    display: flex;
+    flex-direction: column;
+    padding: 0.2rem; 
+    }
+        
+
+}
