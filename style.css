@@ -229,6 +229,9 @@ summary{
         grid-template-columns: repeat(auto-fit, minmax(50px, 3fr));
         word-wrap: break-word;
     }
+    .grid-preview{
+        margin-top: 3rem;
+    }
   
     
 }
@@ -255,7 +258,7 @@ summary{
         background-position: right -44px center;
     }
     .grid-preview{
-        margin-top: 3rem;
+        margin-top: 6rem;
     }
     .navbar a{
     display: flex;
