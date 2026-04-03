@@ -3,61 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ExploreWorld -Home</title>
+    <title>ExploreWorld - Home</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="navbar">
-        <div class="logo">ExploreWorld</div>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="destination.html"> Destination</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-    </header>
-    <section class="hero">
+
+<header class="navbar">
+    <div class="logo">ExploreWorld</div>
+
+    <button class="menu-toggle" aria-label="Open navigation menu">&#9776;</button>
+
+    <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="destination.html">Destination</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<main>
+    <section class="hero section">
         <h1>Your Journey Begins Here</h1>
         <p>Book exclusive trips at unbeatable prices.</p>
-        <a href="destination.html" class=" btn btn--primary"> Explore Package</a>
+        <a href="destination.html" class="btn btn--primary">Explore Package</a>
     </section>
-    <section class="grid-preview">
+
+    <section class="grid-preview section">
         <h2>Popular Destinations</h2>
         <div class="card-grid">
             <div class="card">
-                <img src="./assets/bali.jpg" alt="Bali Beach">
+                <img src="./assets/bali.jpg" alt="Bali beach view">
                 <h3>Bali, Indonesia</h3>
-                <p>Beaches, temple, and vibrant culture.</p>
-
+                <p>Beaches, temples, and vibrant culture.</p>
             </div>
+
             <div class="card">
-                <img src="./assets/paris.jpg" alt="Paris City">
+                <img src="./assets/paris.jpg" alt="Paris city view">
                 <h3>Paris, France</h3>
                 <p>Iconic landmarks and romantic ambiance.</p>
             </div>
+
             <div class="card">
-                <img src="./assets/MachuPicchu.jpg" alt="Machupicchu">
-                <h3>Machupicchu, Peru</h3>
+                <img src="./assets/MachuPicchu.jpg" alt="Machu Picchu ruins">
+                <h3>Machu Picchu, Peru</h3>
                 <p>Ancient Incan city in the Andes.</p>
-            </div> 
+            </div>
+
             <div class="card">
-                <img src="./assets/newyork.jpg" alt="Newyork">
+                <img src="./assets/newyork.jpg" alt="New York skyline">
                 <h3>New York, USA</h3>
                 <p>Iconic skyline and bustling city life.</p>
-            </div>  
+            </div>
         </div>
     </section>
-<section class="testimonials">
-    <h2>What Travelers Say</h2>
-    <div class="testimonial-row">
-      <div class="testimonial">
-        <p>"The trip was perfectly organized and unforgettable!"</p>
-        <p><strong>- Aditi Sharma</strong></p>
-      </div>
-    </div>
-</section>
+
+    <section class="testimonials section">
+        <h2>What Travelers Say</h2>
+        <div class="testimonial-row">
+            <div class="testimonial">
+                <p>"The trip was perfectly organized and unforgettable!"</p>
+                <p><strong>- Aditi Sharma</strong></p>
+            </div>
+        </div>
+    </section>
+</main>
+
 <footer class="footer">
-    <p>ExploreWorld &copy; 2026| info@exploreworld.com</p>
+    <p>ExploreWorld &copy; 2026 | info@exploreworld.com</p>
 </footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>

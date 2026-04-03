@@ -9,78 +9,81 @@
 <body>
     <header class="navbar">
         <div class="logo">ExploreWorld</div>
-        <nav>
+        <button class="menu-toggle" aria-label="Open navigation menu">&#9776;</button>
+
+        <nav class="nav-links">
             <a href="index.html">Home</a>
-            <a href="destination.html"> Destination</a>
+            <a href="destination.html">Destination</a>
             <a href="contact.html">Contact</a>
         </nav>
     </header>
+
     <main class="main-contact">
-    <section class="contact-form">
-        <h2>Contact Us</h2>
-        <form action="">
-            <label for="name">Full Name</label>
-            <input type="text" id="name" required>
-            <label for="email">Email address</label>
-            <input type="email" id="email" required>
-            <label for="phone"> phone number</label>
-            <input type="tel" id="phone" required>
-            <label for="">Destination</label>
-            <select name="" id="">
-                <option value="">choose city</option>
-                <option value="">mumbai</option>
-                <option value="">Banglore</option>
-                <option value="">chennai</option>
-            </select>
-            <label for="">Months</label>
-            <div class="months">
-                <label for=""><input type="radio" name="Months">jan</label>
-                <label for=""><input type="radio" name="Months">feb</label>
-                <label for=""><input type="radio" name="Months">april</label>
-                <label for=""><input type="radio" name="Months">june</label>
-                <label for=""><input type="radio" name="Months">july</label>
-                <label for=""><input type="radio" name="Months">aug</label>
-                <label for=""><input type="radio" name="Months">sept</label>
-                <label for=""><input type="radio" name="Months">oct</label>
-                <label for=""><input type="radio" name="Months">nov</label>
-                <label for=""><input type="radio" name="Months">dec</label>
-                
-            </div>
-              
-                <label for="" class="checkbox">
-                 <input type="checkbox"  >Newsletter Subscription
-                  </label>
-                
-        <label for="comments">Your Message</label>
-        <textarea id="comments" rows="5" required></textarea>
-                <div class="container">
-                <button type="submit" class="btn btn--secondary" >Submit</button>
+        <section class="contact-form">
+            <h2>Contact Us</h2>
+            <form action="">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" required>
+                <label for="email">Email address</label>
+                <input type="email" id="email" required>
+                <label for="phone"> phone number</label>
+                <input type="tel" id="phone" required>
+                <label for="destination">Destination</label>
+                <select name="destination" id="destination">
+                    <option value="">choose city</option>
+                    <option value="mumbai">mumbai</option>
+                    <option value="bangalore">Banglore</option>
+                    <option value="chennai">chennai</option>
+                </select>
+                <label>Months</label>
+                <div class="months">
+                    <label><input type="radio" name="Months">jan</label>
+                    <label><input type="radio" name="Months">feb</label>
+                    <label><input type="radio" name="Months">april</label>
+                    <label><input type="radio" name="Months">june</label>
+                    <label><input type="radio" name="Months">july</label>
+                    <label><input type="radio" name="Months">aug</label>
+                    <label><input type="radio" name="Months">sept</label>
+                    <label><input type="radio" name="Months">oct</label>
+                    <label><input type="radio" name="Months">nov</label>
+                    <label><input type="radio" name="Months">dec</label>
                 </div>
 
-        </form>
-    </section>
+                <label class="checkbox">
+                    <input type="checkbox">Newsletter Subscription
+                </label>
+
+                <label for="comments">Your Message</label>
+                <textarea id="comments" rows="5" required></textarea>
+                <div class="container">
+                    <button type="submit" class="btn btn--secondary">Submit</button>
+                </div>
+            </form>
+        </section>
     </main>
+
     <section class="faq">
         <h3 class="section__title">Frequently Asked Questions</h3>
         <div class="faq__content">
-        <details>
-            <summary>Is my booking refundable?</summary>
-            <p>Yes, our booking policy allows for refunds within 24 hours of purchase.</p>
-            
-        </details>
-        <details>
-            <summary>What is your cancellation policy?</summary>
-            <p>Our cancellation policy allows for cancellations up to 48 hours before the scheduled departure.</p>
-        </details>
-        <details>
-            <summary>How can I update my booking?</summary>
-            <p>You can update your booking by contacting our customer service team or through your account on our website.</p>
-        </details>
+            <details>
+                <summary>Is my booking refundable?</summary>
+                <p>Yes, our booking policy allows for refunds within 24 hours of purchase.</p>
+            </details>
+            <details>
+                <summary>What is your cancellation policy?</summary>
+                <p>Our cancellation policy allows for cancellations up to 48 hours before the scheduled departure.</p>
+            </details>
+            <details>
+                <summary>How can I update my booking?</summary>
+                <p>You can update your booking by contacting our customer service team or through your account on our website.</p>
+            </details>
         </div>
     </section>
+
     <footer class="footer">
         <p>ExploreWorld &copy; 2026| All rights reserved.</p>
     </footer>
-    
+
+    <script src="script.js"></script>
 </body>
 </html>
